@@ -93,7 +93,7 @@ This is a complete full-stack authentication solution built for the modern web. 
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/melabady1/auth-app.git
 cd auth-app
 
 # Install backend dependencies
