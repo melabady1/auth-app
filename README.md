@@ -425,6 +425,3 @@ This project is licensed under the MIT License.
 
 ---
 
-**Built with ❤️ for learning and production use**
-
-For questions or issues, please open a GitHub issue.
