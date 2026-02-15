@@ -34,6 +34,7 @@ This is a complete full-stack authentication solution built for the modern web. 
 ### Developer Experience
 - 📚 **Swagger/OpenAPI Documentation** – Interactive API testing
 - 🪵 **Structured Logging** – Winston with file rotation
+- 🧪 **Unit & E2E Tests** – Jest test suites included
 - 🎨 **Modern UI** – Dark theme with purple accents, smooth animations
 - 📱 **Responsive Design** – Mobile-first approach
 
@@ -65,7 +66,8 @@ This is a complete full-stack authentication solution built for the modern web. 
 │   │   ├── auth/          # Authentication module
 │   │   │   ├── dto/           # Request/response DTOs
 │   │   │   ├── schemas/       # RefreshToken schema
-│   │   │   └── strategies/    # Passport JWT & Local
+│   │   │   ├── strategies/    # Passport JWT & Local
+│   │   │   └── tests/         # Unit tests
 │   │   ├── users/         # User management
 │   │   ├── common/        # Shared utilities
 │   │   │   ├── decorators/    # @CurrentUser
@@ -74,9 +76,10 @@ This is a complete full-stack authentication solution built for the modern web. 
 │   │   │   ├── interceptors/  # Logging
 │   │   │   └── logger/        # Winston config
 │   │   └── main.ts        # Application bootstrap
+│   ├── test/        # e2e test
 │   └── package.json
 │
-└── README.md          # This file
+└── README.md          # readme file
 ```
 
 ---
@@ -313,6 +316,37 @@ User redirected to /signin
 
 ---
 
+## 🧪 Testing
+
+### Backend Tests
+
+```bash
+cd backend
+
+# Unit tests
+npm run test
+
+# Test coverage
+npm run test:cov
+
+# E2E tests
+npm run test:e2e
+
+# Watch mode
+npm run test:watch
+```
+
+### Frontend Tests
+
+```bash
+cd frontend
+
+# Run tests (not implemented yet)
+npm run test
+```
+
+---
+
 ## 🏗️ Production Deployment
 
 ### Backend Checklist
@@ -415,6 +449,7 @@ This project is licensed under the MIT License.
 - **Resilient** – graceful error handling throughout
 - **Observable** – structured logging with Winston
 - **Performant** – optimized DB queries and indexes
+- **Testable** – unit and E2E test examples included
 
 ### Modern Stack
 - Latest stable versions of all dependencies
